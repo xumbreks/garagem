@@ -8,6 +8,7 @@ function adicionarColuna() {
   var input = document.createElement("input");
   input.type = "number";
   input.classList.add("border", "border-gray-500", "p-2", "bg-transparent", "mt-2");
+  input.setAttribute("inputmode", "numeric"); // Adiciona o atributo inputmode
   coluna.appendChild(input);
   
   // Adiciona o ícone ao lado da coluna
