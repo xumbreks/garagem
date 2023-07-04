@@ -1,4 +1,5 @@
 function adicionarColuna() {
+
   // Cria uma nova coluna
   var coluna = document.createElement("div");
   coluna.classList.add("coluna", "flex",
@@ -9,6 +10,7 @@ function adicionarColuna() {
   input.type = "number";
   input.classList.add("border", "border-gray-500", "p-2", "bg-transparent", "mt-2");
   input.setAttribute("inputmode", "numeric"); // Adiciona o atributo inputmode
+
   coluna.appendChild(input);
   
   // Adiciona o ícone ao lado da coluna
@@ -30,7 +32,7 @@ function adicionarColuna() {
   // Adiciona a coluna ao contêiner
   var container = document.getElementById("container");
   container.appendChild(coluna);
-}
+};
 
 function removerColuna() {
   // Obtém todas as colunas presentes no contêiner
