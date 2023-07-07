@@ -88,6 +88,7 @@ function mudarCor(icon) {
     icon.classList.remove("text-green-500");
     icon.classList.add("text-white");
   }
+  
 }
 
 function salvarNumeroNoLocalStorage(numero) {
@@ -130,7 +131,7 @@ function removerNumerosExpirados() {
       var diferencaDias = diferencaTempo / (1000 * 60 * 60 * 24);
 
       // Retorna true se a diferença de dias for menor ou igual a 3 (não expirou)
-      return diferencaDias <= 3;
+      return diferencaDias <= 2;
     });
 
     // Armazena o array de números atualizado no LocalStorage
