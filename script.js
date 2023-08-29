@@ -41,6 +41,19 @@ function adicionarColuna(numero = "") {
   container.appendChild(coluna);
 };
 
+function removerTodasColunas() {
+  // Obtém o contêiner das colunas
+  var container = document.getElementById("container");
+
+  // Remove todas as colunas do contêiner
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+
+  // Limpa o LocalStorage
+  localStorage.removeItem("numeros");
+}
+
 
 function removerColuna() {
   // Obtém todas as colunas presentes no contêiner
