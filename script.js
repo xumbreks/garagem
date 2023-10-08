@@ -28,14 +28,6 @@ function adicionarColuna(numero = "") {
   });
   coluna.appendChild(icon);
 
-  // Adiciona o ícone ao lado da coluna
-  var icon2 = document.createElement("i");
-  icon2.classList.add("ph", "ph-check-circle", "mt-2", "text-4xl", "text-white");
-  icon2.addEventListener("click", function () {
-    mudarCor(icon2);
-  });
-  coluna.appendChild(icon2);
-
   // Adiciona a coluna ao contêiner
   var container = document.getElementById("container");
   container.appendChild(coluna);
